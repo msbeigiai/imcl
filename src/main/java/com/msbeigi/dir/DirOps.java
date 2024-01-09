@@ -1,5 +1,10 @@
 package com.msbeigi.dir;
 
+import com.msbeigi.extention.FileExtensionException;
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 public abstract class DirOps {
     private String name;
 
@@ -16,4 +21,6 @@ public abstract class DirOps {
     public void setName(String name) {
         this.name = name;
     }
+
+    public abstract void opsCreationExtension(final String fileName) throws FileExtensionException;
 }
