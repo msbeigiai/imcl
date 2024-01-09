@@ -1,6 +1,6 @@
 package com.msbeigi.dir;
 
-import com.msbeigi.extention.FileOrDirNotExistException;
+import com.msbeigi.exceptions.FileOrDirNotExistException;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;

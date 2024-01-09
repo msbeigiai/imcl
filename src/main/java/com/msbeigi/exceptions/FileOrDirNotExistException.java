@@ -1,4 +1,4 @@
-package com.msbeigi.extention;
+package com.msbeigi.exceptions;
 
 public class FileOrDirNotExistException extends Exception {
     @Override

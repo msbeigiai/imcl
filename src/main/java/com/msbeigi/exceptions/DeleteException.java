@@ -1,4 +1,4 @@
-package com.msbeigi.extention;
+package com.msbeigi.exceptions;
 
 public class DeleteException extends Exception {
     @Override

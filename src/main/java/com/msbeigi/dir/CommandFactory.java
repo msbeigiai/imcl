@@ -1,7 +1,7 @@
 package com.msbeigi.dir;
 
-import com.msbeigi.extention.FileExtensionException;
-import com.msbeigi.extention.FileOrDirNotExistException;
+import com.msbeigi.exceptions.FileExtensionException;
+import com.msbeigi.exceptions.FileOrDirNotExistException;
 
 import java.util.StringTokenizer;
 import java.util.regex.Matcher;

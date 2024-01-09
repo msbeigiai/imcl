@@ -1,6 +1,6 @@
 package com.msbeigi.dir;
 
-import com.msbeigi.extention.FileExtensionException;
+import com.msbeigi.exceptions.FileExtensionException;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;

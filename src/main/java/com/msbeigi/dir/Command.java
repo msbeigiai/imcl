@@ -1,6 +1,6 @@
 package com.msbeigi.dir;
 
-import com.msbeigi.extention.FileExtensionException;
+import com.msbeigi.exceptions.FileExtensionException;
 
 public interface Command {
     void execute();

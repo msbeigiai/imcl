@@ -1,9 +1,6 @@
 package com.msbeigi.dir;
 
-import com.msbeigi.extention.FileExtensionException;
-
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
+import com.msbeigi.exceptions.FileExtensionException;
 
 public abstract class DirOps {
     private String name;
