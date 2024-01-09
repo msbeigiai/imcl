@@ -1,6 +1,7 @@
 package com.msbeigi.dir;
 
 import com.msbeigi.extention.FileExtensionException;
+import com.msbeigi.extention.FileOrDirNotExistException;
 
 import java.util.StringTokenizer;
 import java.util.regex.Matcher;
@@ -36,7 +37,11 @@ public class CommandFactory extends CommandOps implements Command {
             }
 
             case DELETE -> {
-
+                try {
+                    DeleteOps.deleteExecute(name);
+                } catch (FileOrDirNotExistException e) {
+                    System.out.println(e.getMessage());
+                }
             }
 
             case LS -> {
