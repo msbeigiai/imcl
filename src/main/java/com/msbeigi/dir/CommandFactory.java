@@ -24,16 +24,18 @@ public class CommandFactory extends CommandOps implements Command {
             case MKDIR -> {
                 Directory directory = new Directory(name);
                 DirPath.appendCommand(directory);
+                DirPath.currentPath();
             }
 
             case TOUCH -> {
                 try {
-                    String matchedFileName = fileCreationExtension(name);
-                    File file = new File(matchedFileName);
+                    File file = new File(name);
+                    file.opsCreationExtension(name);
                     FilePath.appendCommand(file);
                 } catch (FileExtensionException e) {
                     System.out.println(e.getMessage());
                 }
+                DirPath.currentPath();
             }
 
             case DELETE -> {
@@ -42,6 +44,7 @@ public class CommandFactory extends CommandOps implements Command {
                 } catch (FileOrDirNotExistException e) {
                     System.out.println(e.getMessage());
                 }
+                DirPath.currentPath();
             }
 
             case LS -> {
