@@ -4,8 +4,6 @@ import com.msbeigi.exceptions.FileExtensionException;
 import com.msbeigi.exceptions.FileOrDirNotExistException;
 
 import java.util.StringTokenizer;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 public class CommandFactory extends CommandOps implements Command {
 
@@ -51,15 +49,5 @@ public class CommandFactory extends CommandOps implements Command {
                 DirPath.currentPath();
             }
         }
-    }
-
-    @Override
-    public String fileCreationExtension(final String fileName) throws FileExtensionException {
-        final Pattern pattern = Pattern.compile("[A-Za-z]+\\.[A-Za-z]+", Pattern.CASE_INSENSITIVE);
-        Matcher matcher = pattern.matcher(fileName);
-        if (!matcher.matches()) {
-            throw new FileExtensionException();
-        }
-        return fileName;
     }
 }
