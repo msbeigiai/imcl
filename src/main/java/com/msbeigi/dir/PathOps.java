@@ -8,9 +8,11 @@ public abstract class PathOps {
     protected DirOps dirOps;
 
     public static void currentPath() {
-        for (int i = 0; i < PATH.size(); i++) {
-            System.out.printf("%s\n", PATH.get(i));
-        }
+        if (!PATH.isEmpty()) {
+            for (int i = 0; i < PATH.size(); i++) {
+                System.out.printf("%s\n", PATH.get(i));
+            }
+        } else System.out.println("./");
     }
 
 }
