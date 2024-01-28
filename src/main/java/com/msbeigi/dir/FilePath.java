@@ -8,6 +8,6 @@ public class FilePath extends PathOps {
     }
 
     public static void appendCommand(DirOps dirOps) {
-        PATH.add(dirOps.getName());
+        path.add(dirOps.getName());
     }
 }

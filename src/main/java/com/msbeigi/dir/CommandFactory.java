@@ -48,6 +48,10 @@ public class CommandFactory extends CommandOps implements Command {
                     DirPath.currentPath();
                 }
 
+                case CD -> {
+                    
+                }
+
                 case LS -> {
                     DirPath.currentPath();
                 }

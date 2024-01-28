@@ -18,10 +18,10 @@ public class DeleteOps extends PathOps {
             operator = commandOps.replaceAll("-", "");
         } else if (dirMatcher.matches())
             operator = commandOps + "/";
-        if (!PATH.contains(operator)) {
+        if (!path.contains(operator)) {
             throw new FileOrDirNotExistException();
         }
 
-        PATH.remove(operator);
+        path.remove(operator);
     }
 }

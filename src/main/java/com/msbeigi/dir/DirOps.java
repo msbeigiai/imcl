@@ -2,7 +2,7 @@ package com.msbeigi.dir;
 
 import com.msbeigi.exceptions.FileExtensionException;
 
-public abstract class DirOps {
+public abstract class DirOps extends ParentDirectory {
     private String name;
 
     protected abstract void create();
